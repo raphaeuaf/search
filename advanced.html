@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Advanced</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header {
+                margin-top: -40px;
+                margin-bottom: 30px;
+                margin-left: 20px;
+                font-family: arial;
+                font-size: 20px;
+                color: #d93025;
+            }
+
+            .rest {
+                font-family: arial, sans-serif;
+                margin: 40px;
+                display: block;
+                flex-wrap: wrap;
+                width: 60%;
+            }
+
+            #input {
+                width: 80%;
+                height: 29px;
+                float: right;
+                text-align: left;
+                font-size: 13px;
+                border: 1px solid #d9d9d9;
+                border-top-color: #c0c0c0;
+                border-radius: 1px;
+            }
+
+            #input:focus {
+                outline: none;
+                border: 1px solid #4d90fe;
+                box-shadow: 0px 1px 4px 0.5px #bbbbbb inset; 
+            }
+
+            img {
+                border: 1px solid #fff;
+            }
+
+            img:hover {
+                cursor: pointer;
+            }
+
+            .lbl {
+                font-size: 13px;
+                color: #333333;
+                display: inline-block;
+                width: 150px;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .big {
+                font-size: 16px;
+                color:#222222;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            .adv {
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                height: 27px;
+                background-color: #4d90fe;
+                border: 1px solid #3079ed;
+                color: #fff;
+                border-radius: 2px;
+                cursor: default;
+                font-size: 11px;
+                font-weight: bold;
+                text-align: center;
+                float: right;
+            }
+
+            .btn:hover {
+                background-color: #377cea;
+                border: 1px solid #2f5bb7;
+            }
+
+            .btnup {
+            background-color: #FFF;
+            border-style: none;
+            color: #212121;
+            float: right;
+            margin: 11px 4px;
+            padding: 8px 16px;            
+            }
+
+            .btnup:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: flex-end">
+            <form action="index.html">
+                <input type="submit" value="Google Search" class="btnup">
+            </form>
+            <form action="images.html">
+                <input type="submit" value="Images" class="btnup">
+            </form>
+        </div>
+        <header>
+            <a href="index.html"><img src="search.png" alt="search" width="100"></a><br><br>
+            <label style="margin:20px;">Advanced Search</label>
+        </header>
+        <hr style="height:1px;border-width:0;background-color:#ebebeb">
+        <div class="rest">
+            <form action="https://www.google.com/search">
+                <div class="adv">
+                    <label class="big">Find pages with...</label>
+                </div>
+                <div class="adv">
+                    <label class="lbl">all these words:</label>
+                    <input type="search" name="as_q" id="input">
+                </div>
+                <div class="adv">
+                    <label class="lbl">this exact word or phrase:</label>
+                    <input type="search" name="as_epq" id="input">
+                </div>
+                <div class="adv">
+                    <label class="lbl">any of these words:</label>
+                    <input type="search" name="as_oq" id="input">
+                </div>
+                <div class="adv">
+                    <label class="lbl">none of these words:</label>
+                    <input type="search" name="as_eq" id="input"><br><br>
+                </div>
+                <div>
+                    <input type="submit" value="Advanced Search" class="btn">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
